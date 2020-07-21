@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../public/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <title>Interactive Majestic</title>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <script src="js/jquery.crossword.js"></script>
+    <script src="js/scriptcross1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            max-width: 100%;
+            height: 20px;
+        }
+
+        table tr {
+            width: 100%;
+        }
+
+        table td {
+            width: 40px;
+            height: 25px;
+            border: 1px solid #cdcdcd;
+            padding: 0;
+            margin: 0;
+            background: rgba(0, 0, 0, .2);
+            position: relative;
+        }
+
+        td input {
+            width: 100%;
+            height: 100%;
+            padding: 0em;
+            border: none;
+            text-align: center;
+            font-size: 15px;
+            color: #666;
+        }
+
+        td input:focus {
+            background-color: #f0fff0;
+        }
+
+        td span {
+            color: #444;
+            font-size: 0.8em;
+            position: absolute;
+            top: -1px;
+            left: 1px;
+        }
+
+        input.done {
+            font-weight: bold;
+            color: green;
+        }
+
+        .active,
+        .clues-active {
+            background-color: #9ACD32;
+            font-size: 13px;
+        }
+
+        .clue-done {
+            color: red;
+            text-decoration: line-through;
+        }
+
+        #puzzle-wrapper {
+            align-content: center;
+            margin-right: 3%;
+        }
+
+        #puzzle-clues {
+            color: #211D60;
+        }
+
+        #puzzle-clues li {
+            font-size: .1px;
+            opacity: 0px;
+        }
+
+        .menu {
+            background-color: #FF7800;
+            color: white;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 2px;
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .item {
+            text-align: left;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            line-height: 300%;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+            border-radius: 5px;
+            border-bottom: 1px solid #1F72EA;
+        }
+
+        input:valid {
+            border-radius: 5px;
+            color: #00BC00;
+            border-bottom: 1px solid #1F72EA;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(../../public/images/english.png)">
+
+    <!-- Barra de Navegación -->
+
+    <div class="menu">
+        <a href="#" class="navbar-brand">
+            <img id="logoMajestic" src="../../public/images/majestic-education.png" alt=""> MED Majestic Education
+            Digital
+        </a>
+        <a class="navbar-brand" href="http://medigital-e-books.herokuapp.com/login">CloudBooks</a>
+        <a class="navbar-brand" href="../../index.html">Menu</a>
+        <a class="navbar-brand" href="crossword-menu.html"><i class="fa fa-arrow-circle-left"></i> Go back</a>
+    </div>
+
+    <div class="container">
+        <div style="margin-top: 20px;">
+            <div class="brand col" align="center">
+                <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 40px; color: #85144b;">
+                    Crossword 1</p>
+                <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 30px; color: #85144b;">
+                Elements of fiction novels</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú  -->
+
+    <div class="container">
+
+        <div class="col-12 mx-auto">
+            <h5 style="font-size: 15px; margin-left: 20px;">
+                <span
+                    style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">•</span>
+                Solve the crossword puzzle by writing the correct answers. Remember that a letter is written in each
+                cell.
+            </h5>
+        </div>
+    </div>
+    <div class="container">
+        <div align="center" id="puzzle-wrapper">
+            <!-- crossword puzzle appended here -->
+        </div>
+        <hr>
+        <h3>Across</h3>
+        <ul style="list-style: none;" class="item">
+            <li> <span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">7.</span>
+                &nbsp;Fictional <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="character|Character"> – person in a narrative work of arts (such as a novel, play, television series or film).</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">9.</span>
+                &nbsp;  <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="plot|Plot">– events that make up a story, particularly: as they relate to one another in a pattern or in a sequence; as they relate to each other through cause and effect; how the reader views the story; or simply by coincidence.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">11.</span>
+                &nbsp; Opposite of non-fiction – non-fiction is the form of any narrative, account, or other  <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="communicative|Communicative"> work whose assertions and descriptions are understood to be fact.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">12.</span>
+                &nbsp; Story arc – extended or continuing storyline in episodic storytelling media such as television, comic books, comic strips, board games, video games, and films with each episode following a narrative arc. On a television program, for example, the story would unfold over many  <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="episodes|Episodes">.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">13.</span>
+                &nbsp; When the reader  <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="reads|Reads"> a passage from a novel, he or she connects the words to images and visualizes the event or situation being read in their imagination, hence the word</li>
+      
+        </ul>
+
+        <hr>
+        <h3>Down</h3>
+        <ul style="list-style: none;" class="item">
+            <li> <span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">1.</span>
+                &nbsp;Source of  <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="entertainment|Entertainment">– This type of entertainment is usually pursued to escape reality and imagine their own; which is suppressing depression with an emotional interest.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">2.</span>
+                &nbsp; <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="antagonist|Antagonist">– character, group of characters, or an institution, who oppose the main character.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">3.</span>
+                &nbsp; <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="protagonist|Protagonist"> – main character around whom the events of the narrative's plot revolve and with whom the audience is intended to share the most empathy.</li>
+            
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">4.</span>
+                &nbsp;  Product of <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="imagination|Imagination">  – Fiction forms pure imagination in the reader, partially because these novels are fabricated from creativity and is not pure truth.</li>
+
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">5.</span>
+                &nbsp; Narrative structure – structural framework that underlies the order and manner in which a narrative is presented to a reader, listener, or viewer. The  <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="narrative|Narrative"> text structures are the plot and the setting.</li>
+
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">6.</span>
+                &nbsp; Genre – any category of literature or other forms of art or <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="culture|Culture">, e.g. music, and in general, any type of discourse, whether written or spoken, audial or visual, based on some set of stylistic criteria.</li>
+            <li><span
+                    style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">8.</span>
+                &nbsp; Monomyth – the hero's journey; it is the common template of a broad category of tales that involve a hero going on an <input
+                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                    pattern="adventure|Adventure">, and in a decisive crisis wins a victory, and then comes home changed or transformed.</li>
+            <li><span
+                        style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">10.</span>
+                    &nbsp; Subplot<input
+                        style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                        pattern="Subplot|subplot">– secondary strand of the plot that is a supporting side story for any story or the main plot. Subplots may connect to main plots, in either time or place or in thematic significance. Subplots often involve supporting characters, those the protagonist or antagonist.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="btn-group-sm mx-auto">
+            <a href="respuestas/crossword1.pdf">
+                <button type="button" class="btn btn-outline-dark">Answers</button>
+            </a>
+            <a href="crossword-menu.html">
+                <button type="button" class="btn btn-outline-warning">Behind</button>
+            </a>
+            <a href="crossword1.html">
+                <button type="button" class="btn btn-outline-success">Restart</button>
+            </a>
+        </div>
+    </div>
+
+
+    <section
+        style="padding-bottom: 675px;background: no-repeat url(../../public/images/ninos.png) bottom center;width: 100%;">
+    </section>
+
+    <div class="card">
+        <div class="card-body">
+            <span class="copyright-year"></span><span>&nbsp;</span>Todos los derechos reservados. &nbsp;</span><a
+                style="color: white;" href="https://www.3d-estudio.com.mx">3D Estudio.</a></span>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('puzzle').getElementsByTagName('input');
+    </script>
+
+
+</body>
+
+</html>

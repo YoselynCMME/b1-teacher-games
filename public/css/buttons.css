@@ -1,0 +1,43 @@
+:root{
+    /* COLORS */
+    --red: #d52800;
+    --white: #ffffff;
+}
+.box01 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 200px;
+  }
+  .box01 img {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 170px;
+  }
+  .box01_bottom {
+    position: relative;
+    background: var(--red);
+    z-index: 5;
+    width: 170px;
+    margin-top: 10px;
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .box01 .line {
+    background: var(--red);
+    margin: 30px 0 25px;
+    display: inline-block;
+  }
+  .line {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 15px 0;
+    background: var(--white);
+  }
+  #contai{
+    padding-top: -600px;
+  }

@@ -1,0 +1,43 @@
+:root{
+    /* FONTS */
+    --fuenteMontserrat: 'Montserrat', sans-serif;
+    /* COLORS */
+    --red: #d52800;
+    --darkRed:#D01D36;
+    --white: #ffffff;
+    --orange: #FF7800;
+}
+
+/* MENY & FOOTER */
+.menu   {
+  background-color: var(--orange);
+  color: var(--white);
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  width: 100%;
+  font-size: 10px;
+}
+.menu a {
+  color: var(--white);
+}
+#logoMajestic {
+  width: 90px;
+}
+.navbar-brand:hover {
+  color: var(--white);
+}
+
+footer{
+  height: 160px;
+  width: 100%;
+  position:inherit ;
+  margin-bottom: 0px;
+  font-family: var(--fuenteMontserrat);
+  color:var(--white);
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: var(--orange);
+  padding-top: 1%;
+}

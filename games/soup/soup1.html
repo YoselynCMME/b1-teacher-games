@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../public/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="format-detection" content="telephone=yes" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <title>Interactive Majestic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sopa.css">
+    <link rel="stylesheet" href="css/wordfind.css">
+    <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/colores.js"></script>
+    <script type="text/javascript" src="js/eventos.js"></script>
+    <script type="text/javascript" src="js/actividad.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        .text-soup {
+            font-family: 'Comfortaa', cursive;
+            font-size: 30px;
+            line-height: 27px;
+            -webkit-user-select: none;
+            /* Chrome 49+ */
+            -moz-user-select: none;
+            /* Firefox 43+ */
+            -ms-user-select: none;
+            /* No support yet */
+            user-select: none;
+            /* Likely future */
+        }
+
+        #scroller {
+            left: auto !important;
+            margin: auto;
+            -webkit-user-select: none;
+            /* Chrome 49+ */
+            -moz-user-select: none;
+            /* Firefox 43+ */
+            -ms-user-select: none;
+            /* No support yet */
+            user-select: none;
+            /* Likely future */
+        }
+
+        #wrapper {
+            z-index: 1;
+            overflow: hidden;
+            bottom: 44px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .item {
+            text-align: left;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            line-height: 300%;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+            border-radius: 5px;
+            border-bottom: 1px solid #1F72EA;
+        }
+
+        input:valid {
+            border-radius: 5px;
+            color: #00BC00;
+            border-bottom: 1px solid #1F72EA;
+        }
+
+        .menu {
+            background-color: #FF7800;
+            color: white;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 2px;
+            width: 100%;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+
+    <div class="menu">
+        <a href="#" class="navbar-brand">
+            <img id="logoMajestic" src="../../public/images/majestic-education.png" alt=""> MED Majestic Education
+            Digital
+        </a>
+        <a class="navbar-brand" href="http://medigital-e-books.herokuapp.com/login">CloudBooks</a>
+        <a class="navbar-brand" href="../../index.html">Menu</a>
+        <a class="navbar-brand" href="soup-menu.html"><i class="fa fa-arrow-circle-left"></i> Go back</a>
+    </div>
+
+    </div>
+
+    <div class="container">
+        <div style="margin-top: 20px;">
+            <div class="brand col" align="center">
+                <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 40px; color: #85144b;">Word
+                    formation</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page bg01">
+
+        <div class="container">
+            <div class="col-12 mx-auto">
+                <h5 style="font-size: 15px; margin-left: 20px;">
+                    <span
+                        style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">•</span>
+                    Change the word in brackets for one that fits correctly in each sentence.
+                </h5>
+            </div>
+
+            <div id="wrapper">
+                <div id="scroller">
+                    <div class="container" id="lienzo"></div>
+
+                    <hr>
+                    <ul style="list-style: decimal;" class="item">
+                        <li>&nbsp; I like this resort because the rooms have a <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="spectacular|Spectacular"> view of the sea. (spectacle)</li>
+                        <li>&nbsp; I’m sure your wedding party will be <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="unforgettable|Unforgettable">. You’re going to love it! (forget)</li>
+                        <li>&nbsp; The new technique on educations is quite <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="innovative|Innovative">. (innovate)</li>
+                        <li>&nbsp; Your <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="behavior|Behavior"> at school is unacceptable. You must change it. (behave)
+                        </li>
+                        <li>&nbsp; What <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="conclusion|Conclusion">did you come to in the meeting? (conclude)</li>
+                        <li>&nbsp; This school prefers collaborative work over <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="competition|Competition">. (compete)</li>
+                        <li>&nbsp; I think there could be more cooperation between industrial and <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="developing|Developing">countries. (develop)</li>
+                        <li>&nbsp; My father has always had big <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="expectations|Expectations">about my future. (expect)</li>
+                        <li>&nbsp; We need to fin dan <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="effective|Effective"> way to lose weight. (effect)</li>
+                        <li>&nbsp; I think we need <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="additional|Additional"> space for new students. (add)</li>
+                        <li>&nbsp; With this new surveillance equipment, all the <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="movements|Movements"> of staff and clients will be seen. (move)</li>
+                        <li>&nbsp; I don’t feel <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="confident|Confident"> to take the certification exam. I need more time to
+                            study. (confidence)</li>
+                        <li>&nbsp; After his graduation, George found a <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="suitable|Suitable"> job. (suit)</li>
+                        <li>&nbsp; It is evident the <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="nervousness|Nervousness"> of students before the exam. (nervous)</li>
+                        <li>&nbsp; The <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="depth|Depth"> of this lake is 2000 meters. (Deep)</li>
+                        <li>&nbsp; One environmental problem now a day is big <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="deforestation|Deforestation">in different states in the country. (forest)</li>
+                        <li>&nbsp; Tourist activity is restricted in this beach to prevent <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="destruction|Destruction">of coral reefs. (destroy).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="btn-group-sm mx-auto">
+                    <a href="respuestas/soup1.pdf">
+                        <button type="button" class="btn btn-outline-dark">Answers</button>
+                    </a>
+                    <a href="soup-menu.html">
+                        <button type="button" class="btn btn-outline-warning">Behind</button>
+                    </a>
+                    <a href="soup1.html">
+                        <button type="button" class="btn btn-outline-success">Restart</button>
+                    </a>
+                    <a href="soup2.html">
+                        <button type="button" class="btn btn-outline-primary">Following</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section
+            style="padding-bottom: 675px;background: no-repeat url(../../public/images/ninos.png) bottom center;width: 100%;">
+        </section>
+
+        <div class="card">
+            <div class="card-body">
+                <span class="copyright-year"></span><span>&nbsp;</span>Todos los derechos reservados. &nbsp;</span><a
+                    style="color: white;" href="https://www.3d-estudio.com.mx">3D Estudio.</a></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var arrayTemp = [
+            'spectacular',
+            'unforgettable',
+            'innovative',
+            'behavior',
+            'conclusion',
+            'competition',
+            'developing',
+            'expectations',
+            'effective',
+            'additional',
+            'movements',
+            'confident',
+            'suitable',
+            'nervousness',
+            'depth',
+            'deforestation',
+            'destruction',
+        ];
+        var temp = arrayTemp.map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
+
+        $(document).on('click', '#lienzo', function () {
+            if (arrayTemp.length == $('#lienzo .line').length) {
+                swal("Congratulations!", "You did it very well.", "success");
+            }
+        });
+
+    </script>
+</body>
+
+</html>

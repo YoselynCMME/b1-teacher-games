@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../public/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="format-detection" content="telephone=yes" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/memoria.css">
+    <title>Interactive Majestic</title>
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sopa.css">
+    <link rel="stylesheet" href="css/wordfind.css">
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/colores.js"></script>
+    <script type="text/javascript" src="js/eventos.js"></script>
+    <script type="text/javascript" src="js/activity3.js"></script>
+    <script type="text/javascript" src="wordfind.js"></script>
+    <script type="text/javascript" src="wordfindgame.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <style type="text/css">
+        .text-soup {
+            font-family: 'Comfortaa', cursive;
+            font-size: 30px;
+            line-height: 27px;
+            -webkit-user-select: none;
+            /* Chrome 49+ */
+            -moz-user-select: none;
+            /* Firefox 43+ */
+            -ms-user-select: none;
+            /* No support yet */
+            user-select: none;
+            /* Likely future */
+        }
+
+        #scroller {
+            left: auto !important;
+            margin: auto;
+            -webkit-user-select: none;
+            /* Chrome 49+ */
+            -moz-user-select: none;
+            /* Firefox 43+ */
+            -ms-user-select: none;
+            /* No support yet */
+            user-select: none;
+            /* Likely future */
+        }
+
+        #wrapper {
+            z-index: 1;
+            overflow: hidden;
+            bottom: 44px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .item {
+            text-align: left;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            line-height: 300%;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+            border-radius: 5px;
+            border-bottom: 1px solid #1F72EA;
+        }
+
+        input:valid {
+            border-radius: 5px;
+            color: #00BC00;
+            border-bottom: 1px solid #1F72EA;
+        }
+
+        .menu {
+            background-color: #FF7800;
+            color: white;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 2px;
+            width: 100%;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+
+    <div class="menu">
+        <a href="#" class="navbar-brand">
+            <img id="logoMajestic" src="../../public/images/majestic-education.png" alt=""> MED Majestic Education Digital
+        </a>
+        <a class="navbar-brand" href="http://medigital-e-books.herokuapp.com/login">CloudBooks</a>
+        <a class="navbar-brand" href="../../index.html">Menu</a>
+        <a class="navbar-brand" href="soup-menu.html"><i class="fa fa-arrow-circle-left"></i> Go back</a>
+    </div>
+
+    <div class="container">
+        <div style="margin-top: 20px;">
+            <div class="brand col" align="center">
+                <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 40px; color: #85144b;">Alphabet
+                    soup 3</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page bg01">
+
+        <div class="container">
+            <div class="col-12 mx-auto">
+                <h5 style="font-size: 15px; margin-left: 20px;">
+                    <span
+                        style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">•</span>
+                    Unit 3. Works and jobs
+                </h5>
+            </div>
+
+            <div id="wrapper">
+                <div id="scroller">
+                    <div class="container" id="lienzo"></div>
+
+                    <hr>
+                    <ul style="list-style: decimal;" class="item">
+                        <li>&nbsp; Antonym of modern. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="ancient|Ancient"></li>
+                        <li>&nbsp; Similar to beautiful. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="lovely|Lovely"></li>
+                        <li>&nbsp; Antonym of shelter <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="expose|Expose"></li>
+                        <li>&nbsp; Similar to steady. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="regular|Regular"></li>
+                        <li>&nbsp; Similar to terror <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="fear|Fear"></li>
+                        <li>&nbsp; Synonym of sure. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="certain|Certain"></li>
+                        <li>&nbsp; Antonym of liberty. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="slavery|Slavery"></li>
+                        <li>&nbsp; Synonym of courteous<input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="polite|Polite"></li>
+                        <li>&nbsp; Antonym of uninterested. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="keen|Keen"></li>
+                        <li>&nbsp; Similar to question. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="enquiry|Enquiry"></li>
+                        <li>&nbsp; Synonym of energy. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="power|Power"></li>
+                        <li>&nbsp; Opposite of difficult. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="easy|Easy"></li>
+                        <li>&nbsp; Similar to splendid. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="grand|Grand">.</li>
+                        <li>&nbsp; Antonym of happiness. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="sadness|Sadness"></li>
+                        <li>&nbsp; Synonym of necessary. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="needful|Needful"></li>
+                        <li>&nbsp; Opposite of unfasten. <input
+                                style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                pattern="fasten|Fasten"></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="btn-group-sm mx-auto">
+                    <a href="respuestas/soup3.pdf">
+                        <button type="button" class="btn btn-outline-dark">Answers</button>
+                    </a>
+                    <a href="soup2.html">
+                        <button type="button" class="btn btn-outline-warning">Behind</button>
+                    </a>
+                    <a href="soup3.html">
+                        <button type="button" class="btn btn-outline-success">Restart</button>
+                    </a>
+                    <a href="soup4.html">
+                        <button type="button" class="btn btn-outline-primary">Following</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section style="padding-bottom: 675px;background: no-repeat url(../../public/images/ninos.png) bottom center;width: 100%;"></section>
+
+        <div class="card">
+            <div class="card-body">
+                <span class="copyright-year"></span><span>&nbsp;</span>Todos los derechos reservados. &nbsp;</span><a style="color: white;" href="https://www.3d-estudio.com.mx">3D Estudio.</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var arrayTemp = [
+            'coach', //ok
+            'company', //ok
+            'computer', //ok
+            'cooks', //ok
+            'dentist', //ok
+            'doctor', //ok
+            'driver', //ok
+            'earn', //ok
+            'factory', //ok
+            'footballer', //ok
+            'job', //ok
+            'mechanic', //ok
+            'nurse', //ok
+            'officer', //ok
+            'photographer', //ok
+            'queen', //ok
+            'uniform', //ok
+            'teacher', //ok
+            'singer', //ok
+            'actor', //ok
+        ];
+        var temp = arrayTemp.map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
+
+        $(document).on('click', '#lienzo', function () {
+            if (arrayTemp.length == $('#lienzo .line').length) {
+                swal("Congratulations!", "You did it very well.", "success");
+            }
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="set/js/lockWebSite.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sopa.js"></script>
+
+
+</body>
+
+</html>
